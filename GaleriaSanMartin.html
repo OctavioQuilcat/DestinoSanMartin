@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imágenes de San Martín</title>
+    <style>
+        <style>
+
+        nav ul {
+            background-color: #153D02;
+            list-style-type: none;
+            padding: 10;
+            text-align: center;
+        }
+
+        nav ul li {
+            font co: #A6F2F7;
+            display: inline;
+            margin-right: 20px;
+            text-align: center;
+        }
+        aside {
+         background-color: #85B170;
+            padding: 20px;   
+        }
+            
+        .article:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .article:nth-child(odd) {
+            background-color: #e9e9e9;
+        }
+
+        .article {
+            display:flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 10px;
+            margin: 0px  0px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 400px;
+            height: 500px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-content p {
+            margin: 10px 0 0;
+            color: #666;
+        }
+        footer {
+            background-color: #332;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        </style>
+    </style>
+    </head>
+<body>
+    <header>
+        <h1>Galeria de imágenes de San Martín</h1>
+    </header>
+    <nav>
+            <ul>
+                <li><a href="GeografiaSanMartin.html">Geografía</a></li>
+                <li><a href="HistoriaSanMartin.html">Historia</a></li>
+                <li><a href="EconomiaSanMartin.html">Economía</a></li>
+                <li><a href="index.html">Índice</a></li>
+            </ul>
+        </nav>
+    <aside>
+       <iframe src="https://www.youtube.com/embed/Os-HS0YF7VQ?si=y-623ZxXAGOyK1IP">
+        </iframe>
+    </aside>
+    <section>
+        <h2>Imágenes sobre su historia</h2>
+        <article>
+        <h3>Fundación de San Martín</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/f1.jpg" alt="Fundación de San Martín" width="400px" height="500px">
+            <div class="card-content">
+                <p>La fundación de San Martín el 4 de septiembre de 1906</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/f2.jpg" alt="117 aniversario" width="300px" height="400px">
+            <div class="card-content">
+                <p>La celebración del 117 aniversario de la fundación de San Martín</p>
+            </div>
+        </div>
+        </div>
+    </article>
+        <article>
+            <h3>Culturas que habitaron</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/cc1.jpg" alt="Sarcófagos de la cultura chachapoyas" width="400px" height="500px">
+            <div class="card-content">
+                <p>Sarcófagos de la cultura Chachapoyas</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/cc2.jpg" alt="Arquitectura de la cultura Chachapoyas" width="400px" height="500px">
+            <div class="card-content">
+                <p>Arquitectura de la cultura Chachapoyas</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Gastronomía</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/g1.jpg" alt="Timbuche" width="400px" height="500px">
+            <div class="card-content">
+                <p>El Timbuche de Carachama</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/g2.jpg" alt="Chipado de pescado" width="400px" height="500px">
+            <div class="card-content">
+                <p>Chipado de pescado</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/g3.jpg" alt="Tacacho con cecina" width="400px" height="500px">
+            <div class="card-content">
+                <p>Tacacho con cecina</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/g4.jpg" alt="Juane" width="400px" height="500px">
+            <div class="card-content">
+                <p>Juane</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Danzas</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/d1.jpg" alt="El carnaval de Lamas" width="400px" height="500px">
+            <div class="card-content">
+                <p>El carnaval de Lamas</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/d2.jpg" alt="El carnaval Riojano" width="400px" height="500px">
+            <div class="card-content">
+                <p>El carnaval Riojano</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/d3.jpg" alt="La fiesta de San Juan" width="400px" height="500px">
+            <div class="card-content">
+                <p>La fiesta de San Juan</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Música</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/m1.jpg" alt="Conjunto de instrumentos folklóricos" width="400px" height="500px">
+            <div class="card-content">
+                <p>Conjunto de instrumentos folklóricos</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/m2.jpg" alt="Congas" width="400px" height="500px">
+            <div class="card-content">
+                <p>Congas</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/m3.jpg" alt="Guitarra" width="400px" height="500px">
+            <div class="card-content">
+                <p>Quenas</p>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+        <h2>Imágenes sobre su geografía</h2>
+        <article>
+        <h3>Localización y recursos</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/r1.jpg" alt="Localización" width="400px" height="500px">
+            <div class="card-content">
+                <p>Localización de San Martín en el mapa del Perú</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/r2.jpg" alt="Bromelias" width="300px" height="400px">
+            <div class="card-content">
+                <p>Bromelias</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/r3.jpg" alt="orquídeas" width="400px" height="500px">
+            <div class="card-content">
+                <p>Orquídeas</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/r4.jpg" alt="Localización" width="400px" height="500px">
+            <div class="card-content">
+                <p>Laguna Sauce</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Flora y fauna representativa</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/ff1.jpg" alt="Chancapiedra" width="400px" height="500px">
+            <div class="card-content">
+                <p>Chancapiedra</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/ff2.jpg" alt="Paico" width="400px" height="500px">
+            <div class="card-content">
+                <p>Paico</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/ff3.jpg" alt="Jote" width="400px" height="500px">
+            <div class="card-content">
+                <p>Jote</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/ff4.jpg" alt="Carancho" width="400px" height="500px">
+            <div class="card-content">
+                <p>Carancho</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Zonas protegidas</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/z1.jpg" alt="Cordillera escalera" width="400px" height="500px">
+            <div class="card-content">
+                <p>Cordillera escalera</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/z2.jpg" alt="Bosque Alto Mayo" width="400px" height="500px">
+            <div class="card-content">
+                <p>Bosque Alto Mayo</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/z3.jpg" alt="Parque cordillera azul" width="400px" height="500px">
+            <div class="card-content">
+                <p>Parque cordillera azul</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/z4.jpg" alt="Parque Río Abiseo" width="400px" height="500px">
+            <div class="card-content">
+                <p>Parque Río Abiseo</p>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+        <h2>Imágenes sobre su economía</h2>
+        <article>
+        <h3>Actividades económicas y factores de producción</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/a1.jpg" alt="Agricultura" width="400px" height="500px">
+            <div class="card-content">
+                <p>Labor agrícola en la región de San Martín</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/a2.jpg" alt="Pesca" width="300px" height="400px">
+            <div class="card-content">
+                <p>Labor pesquera en la región de San Martín</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/a3.jpg" alt="Ganadería" width="400px" height="500px">
+            <div class="card-content">
+                <p>Labor ganadera en la región de San Martín</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/a4.jpg" alt="Forestal" width="400px" height="500px">
+            <div class="card-content">
+                <p>Recursos forestales de San Martín</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Lugares turísticos</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/l1.jpg" alt="Castillo de Lamas" width="400px" height="500px">
+            <div class="card-content">
+                <p>El Castillo de Lamas</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/l2.jpg" alt="Catarata de Ahuashiyacu" width="400px" height="500px">
+            <div class="card-content">
+                <p>Catarata de Ahuashiyacu</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/l3.jpg" alt="Taytamaki Parque de aventuras" width="400px" height="500px">
+            <div class="card-content">
+                <p>Taytamaki Parque de aventuras</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="Galeria/l4.jpg" alt="Ecoparque La Soñada" width="400px" height="500px">
+            <div class="card-content">
+                <p>Ecoparque La Soñada</p>
+            </div>
+        </div>
+    </article>
+        <article>
+            <h3>Empresas de la zona</h3>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/e1.jpg" alt="Tarapoto Selva Tours" width="400px" height="500px">
+            <div class="card-content">
+                <p>Tarapoto Selva Tours</p>
+            </div>
+        </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="Galeria/e2.jpg" alt="Grupo Agro Oriente S.A.C" width="400px" height="500px">
+            <div class="card-content">
+                <p>Grupo Agro Oriente S.A.C</p>
+            </div>
+        </div>
+    </article>
+</section>
+
+<footer>
+        <p>&copy; 2024 Destino San Martín: Donde la selva y cultura se encuentran.com - Trabajo de investigación desarrollado por estudiantes del 9no grado de secundaria, Lima, Perú</p>
+    </footer>
+</body>
+</html>
+          
+
+

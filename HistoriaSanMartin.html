@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia: San Martin</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10;
+        }
+
+        nav ul li {
+            font co: #A6F2F7;
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .header {
+            position: relative;
+            height: 400px; /* Ajusta esta altura según tu preferencia */
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Asegura que el contenido adicional no se muestre */
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.gochile.cl/fotos/header/64476-1891313_10206012290847679_3584322704167808764_o.jpg'); /* Reemplaza con la ruta a tu imagen */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.9; /* */
+            z-index: 0; /*  */
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Color de overlay con transparencia */
+            z-index: 1; /* Asegura que el overlay esté sobre la imagen de fondo pero debajo del contenido */
+        }
+
+        .header h1 {
+            position: relative;
+            z-index: 1; /* Asegura que el texto esté por encima del overlay */
+            margin: 0;
+            font-size: 4em; /* Ajusta el tamaño del texto si es necesario */
+        }
+
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #e9e9e9;
+        }
+
+        /* Estilos para las tarjetas con efecto hover */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-content p {
+            margin: 10px 0 0;
+            color: #666;
+        }
+        footer {
+            background-color: #332;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-overlay"></div>
+        <h1>San Martin: Historia y Costumbres</h1>
+    </div>
+    <nav>
+            <ul>
+                <li><a href="GeografiaSanMartin.html">Geografía</a></li>
+                <li><a href="index.html">Índice</a></li>
+                <li><a href="EconomiaSanMartin.html">Economía</a></li>
+                <li><a href="GaleriaSanMartin.html">Galería de imágenes</a></li>
+            </ul>
+        </nav>
+    <aside>
+       <iframe src="https://www.youtube.com/embed/pKryg034__I?si=gp7sy0AeufD9aUmV">
+        </iframe>
+    </aside>
+    <div class="section">
+        <h2>Fundacion</h2>
+        <p>El 4 de septiembre de 1906, fue creado el departamento de San Martín, teniendo como capital la ciudad de Moyobamba. Esta fue tomada en cuenta como base el respeto y consideración. Su fundación se dio básicamente para promover su desarrollo y tener una mejor organización del territorio.</p>
+    </div>
+
+    <div class="section">
+        <h2>Culturas que habitaron</h2>
+        <p>San Martín ha sido habitado por diversas culturas indígenas amazónicas además de comunidades étnicas.
+        La Kechwa, mayormente en las provincias de Lamas, San Martín, El Dorado Huallaga, Picota y Tocache; los Awajún en la provincia de Rioja y Moyobamba; y los Shawis en las provincias de Lamas y San Martín
+
+        Lamas Chachapoyas (22,513 habitantes), ubicados únicamente en este departamento, representan el 93% del total de población indígena,
+        Aguaruna con una población de 1,789 habitantes, estos se encuentran en una pequeña extensión entre las provincias de Moyobamba y Rioja.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Chachapoyas (800 d.C. - 1500 d.C.):</h2>
+        <p>Chachapoyas significa “Bosque nuboso”
+        Habitaron en sectores del noroeste del departamento de San Martín como parte de su extensión.
+        Arquitectura: Son conocidos por sus muy impresionantes construcciones de piedra, incluyendo la fortaleza de Kuélap, que es uno de los sitios arqueológicos más importantes de la región.
+        Economía: Su economía se basaba en la agricultura de terrazas, similar a otras culturas, y en el comercio, además de realizar otras actividades como el pastoreo, cazas y recolección.
+        Religión y Cultura: Tenían prácticas funerarias distintivas, como los sarcófagos antropomorfos encontrados en lugares como Karajía.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Ubicación:</h2>
+        <p>Esta cultura habitó en la selva alta, en las montañas llenas de vegetación, en las zonas más lluviosas del Perú, específicamente en el valle del río Utcubamba en la región Amazonas.</p>
+    </div>
+
+    <div class="section">
+        <h2>Video:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/96Hp26cF1xc" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+        <h2>Gastronomia:</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/MTOQIN6QSJC2PHDRN3B6NZWRLA.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Tacacho con cecina</h3>
+                    <p>la palabra tacacho proviene del quechua «taka chu», que en español significa «lo golpeado». Esta palabra hace referencia a la preparación de este famoso plato, en la cual se debe aplastar un plátano con una piedra.  El ingrediente principal es el plátano verde, que en la selva es llamado «bellaco», porque es grande, duro, y carece de sabor cuando está crudo. El tacacho se suele comer en cualquier momento del día, pero usualmente se sirve en el almuerzo y la cena. Este plato es típico no solo en San Martín, sino también en toda la selva peruana. 
+.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.peru.travel/Contenido/Uploads/Juane%20Interior%203_637418171266393314.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>El Juane</h3>
+                    <p> En el pasado este plato fue una comida típica para los viajeros, ya que podía ser almacenada durante mucho tiempo sin que se descomponga. Su origen proviene de la llegada de los españoles al Perú, cuando los evangelistas hicieron popular el episodio de San Juan el Bautista; de allí deriva el nombre. Se consume en las fiestas de San Juan en la selva, cada año a finales de junio.En San Martín hay una ciudad llamada Rioja, que se le conoce como la capital del carnaval en la región San Martín. Cabe resaltar que esta es conocida por tener uno de los mejores juanes del país.
+</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://aventuras.pe/blog/wp-content/uploads/2023/01/Patarashca.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Patarashca</h3>
+                    <p>Patarashca significa ‘doblar’ o ‘pegar’ en quechua. Puede ser preparado con varios tipos de pescado de agua dulce. Las especies preferidas son el ratón de monte, el lagarto blanco o el maparante, entre otros tipos de pescado de la región. En algunos pueblos indígenas de San Martín, preparan el plato con carne de hualo, un batracio gigante. Además, en su preparación, al pescado se le hacen tres cortes, luego se le añade sal y se deja marinar por diez minutos; se adereza por dentro y por fuera con ají, cebolla, comino y cebolla. Puede hacerse a la parrilla o al horno, envuelto en hojas de plátano o bijao
+</p>
+                </div>
+            </div>
+        </div>
+ <div class="section">
+        <h2>Sigamos viendo:</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://elcomercio.pe/resizer/Eg6L4vZhyC5-vT_kSwLHmvcmsb4=/400x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZK4L3Y5W3JEPDKJKXYCVJDIK64.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Rumo-Api y Sara-Api:</h3>
+                    <p>Rumo significa yuca,
+Sara significa maíz,
+Api significa, húmedo o mojado. 
+
+Estas son sopas típicas de la selva, se preparan a base de yuca, maíz y carne de animales silvestres.
+Estos pueden ser: El tapir amazónico, el añuje o agutí, el picuro, la huangana o pecarí, el sajino, el ronsoco o capibara, la sachavaca, el armadillo y algunos otros mamíferos que habitan en la región.
+
+La sopa Sara – Api también se elabora con carne de gallina, además de que tiene una sencilla preparación que consiste en agregar al agua hervida sal, pimienta y comino al gusto.
+.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://portal.andina.pe/EDPFotografia3/thumbnail/2021/07/22/000792236M.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Timbuche</h3>
+                    <p>Sopa de pescado fresco, se le dice "levanta muertos" por sus propiedades tonificantes. Destaca como una opción saludable de comida peruana tradicional ya que es una gran fuente de omega 3. También, resalta por su combinación única de sabores peruanos y texturas, además de que a este plato tambien se le conoce como Chilcano de Carachama. </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/5d/6d/07/5d6d0719b86439b7ae2d45e4bc88198b.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Chipado de Pescado</h3>
+                    <p>El chipado de pescado se prepara con el pez barbón (este pez abunda en la selva central), típico de las comunidades asháninkas. El pescado se prepara con sal y sachaculantro y se enrolla en hojas de plátano. Se cocina a la brasa o a la leña a fuego lento y se sirve con ají de cocona. Se acompaña con yuca asada o sancochada.
+Una de las bebidas favoritas es el masato o jugo de yuca y se sirve junto a este platillo.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .section-with-image {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-with-image h2 {
+            flex: 1;
+            font-size: 2em;
+            margin-right: 20px;
+        }
+
+        .section-with-image img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .section-with-image p {
+            flex: 2;
+            margin: 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-with-image">
+        <h2>Cultura Motilones</h2>
+        <img src="https://d3nmwx7scpuzgc.cloudfront.net/sites/default/files/pagina_basica/familia_de_indios_churruyes.jpg" alt="Imagen de la sección">
+        <p>Ademas de Chachapoyas, existio la cultura Motilones. Los Motilones habitaban principalmente las áreas bajas de la selva de San Martín y partes de la región amazónica.Su sociedad se basaba en la organización en tribus y clanes, con una estructura social basada en la familia extendida. Los caciques eran los líderes principales.
+Ellos eran cazadores-recolectores, complementado con la horticultura y la pesca. Practicaban la agricultura de roza y quema, cultivando yuca, maíz, y otros cultivos tropicales.En sus divinidades tenemos a la religión. Eran Politeístas, con una fuerte conexión espiritual con la naturaleza. Creían en espíritus de la selva, del agua y del cielo, y realizaban rituales chamánicos para comunicarse con estos espíritus.
+Prácticas de rituales: danzas, cantos y el uso de plantas alucinógenas en ceremonias religiosas. En sus aportes culturales esta el Conocimiento de la Selva, Desarrollaron un profundo conocimiento de la flora y fauna amazónicas, contribuyendo con técnicas de manejo sostenible de recursos naturales.
+Medicina Tradicional: Usaban plantas medicinales para tratar diversas enfermedades, conocimiento que ha sido valorado por la etnobotánica moderna.</p>
+
+    </div>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .section-with-image {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-with-image h2 {
+            flex: 1;
+            font-size: 2em;
+            margin-right: 20px;
+        }
+
+        .section-with-image img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .section-with-image p {
+            flex: 2;
+            margin: 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section-with-image">
+        <h2>Cultura Chazuta</h2>
+        <img src="https://portal.andina.pe/EDPFotografia3/thumbnail/2019/07/05/000598433M.jpg" alt="Imagen de la sección">
+        <p> La cultura Chazuta se ubicó en la zona baja de la selva de San Martín, a lo largo del río Huallaga. Se organizaban en comunidades aldeanas, con una estructura jerárquica dirigida por líderes comunitarios o jefes de aldea. Su economía era basada en la agricultura cultivando maíz, yuca y plátano. También practicaban la pesca y la caza. Ademas, adoraban a dioses y espíritus asociados con elementos naturales como ríos, montañas y animales. Los chamanes eran figuras centrales en sus prácticas religiosas y enterraban a sus muertos en urnas de cerámica, acompañados de ofrendas.Por ultimo, cerámica: Famosos por sus urnas funerarias decoradas y otros objetos de cerámica que reflejan su cosmovisión y habilidades artísticas.
+Costumbres y Tradiciones: Conservan hasta hoy muchas de sus costumbres y tradiciones, influyendo en la identidad cultural de la región.
+
+
+</p>
+
+    </div>
+<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://centralamazonica.pe/wp-content/uploads/2021/11/serenateros-feat-1.jpg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.9;
+            z-index: 0;
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .header h1 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            font-size: 4em;
+        }
+
+        .gallery-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(25% - 10px);
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-overlay"></div>
+        <h1>Musica de San Martin</h1>
+    </div>
+
+    <div class="gallery-section">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9F6Y10qNmCwfyaPLl8cdwALH3GWCTBSNSjQ&s" alt="Foto 1"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Congas.JPG" alt="Foto 2">            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/HardtkePauken.jpg/800px-HardtkePauken.jpg" alt="Foto 3"> 
+            <img src="https://woodandsteel.taylorguitars.com/wp-content/uploads/2021/01/Taylor-WS-Series2.jpg" alt="Foto 4"> 
+            <img src="https://www.its.caltech.edu/~politzer/banjo-ring/two-Deerings-large.jpg" alt="Foto 5"> 
+            <img src="https://importacioneslunaperu.com/wp-content/uploads/2015/07/20-1.jpg" alt="Foto 6"> 
+            <img src="https://www.civitatis.com/f/peru/cusco/taller-zampona-cusco-589x392.jpg" alt="Foto 7"> 
+            <img src="https://www.guitarrasfuentes.com/wp-content/uploads/2018/08/entrada1.jpg" alt="Foto 8"> 
+        </div>
+    </div>
+</div>
+<div class="section">
+        <h2>Musica</h2>
+        <p>Como primer instrumento, tenemos al bombo. Luego, al instrumento que esta a su lado, la conga, timbales, guitarra, banjo, quena, zampoña y bajo</p>
+<p> Además, San Martín refleja gran parte de su folklore e influencia y distinción geográfica en su música. En este caso San Martín presenta varios géneros y estilos, con diferentes orígenes. 
+
+El principal es la Cumbia Amazónica, originada en 1960, que combina estilos propios selváticos con ritmos de la cumbia colombiana, la lambada y el rock psicodélico, siendo los mirlos, provenientes de Moyobamba, uno de sus mayores exponentes, contando con piezas como “La danza de los mirlos”: “La danza del petrolero”: “Lamento de la selva”: “Eres mentirosa”: “Boquita de coral”: “Los tigres de Tarapoto". Con canciones tales como “El Tunchi loco”, “El shicshirabo”, “Versos para mi amor”, “El Cuchi Aycha” y “Bailando con los tigres”. 
+También está la música ejecutada a la par de danzas en fiestas patronales, ceremonias y fechas festivas, como el Carnaval de Lamas, La pandilla, La danza de la anaconda, entre otras. </p>
+
+    </div>
+
+    </div>
+<div class="gallery-section">
+        <h2>Los Mirlos</h2>
+        <div class="gallery">
+            <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2024/02/19/65d418e8632d653b8c10ba7f.webp" alt="Foto 1"> 
+            <img src="https://conexionrock.com/wp-content/uploads/2021/11/los_mirlos_ok.png" alt="Foto 2">
+</div>
+
+ <div class="section">
+        <h2>Folklore y su Historia</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://danzasdelaselva.com/wp-content/uploads/2020/12/danza-de-la-boa.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Danza de La Anaconda</h3>
+                    <p>En San Martín, cada danza está reservada para eventos o celebraciones que se hagan, un ejemplo muy reconocido nacionalmente es la danza de la Anaconda, que constituye uno de los principales atractivos y focos culturales de la regiòn, siendo, en la regiòn misma, ejecutada con una Anaconda real, pero fuera con una imitaciòn hecha de madera o tela. 
+
+Esta  tiene un origen religioso y sobre todo de respeto puesto que relata, venera y agradece el poder de una de las bestias màs temidas del Rìo Amazonas, la Anaconda; al ejecutarse la danza, con suma minuciosidad y respeto, se buscaba que esta protegiese los cultivos de desastres naturales, y que incluso ayude en su desarrollo, dependiendo de este modo la supervivencia de las tribus. Brinda un sentido de respeto y temor hacía la naturaleza.
+ 
+.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://live.staticflickr.com/2455/3770205678_891968a570_z.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Danza de La Pesca</h3>
+                    <p>La danza de la pesca tambièn es muy conocida en la regiòn, teniendo esta foco en representar el proceso de la pesca como dice su nombre, con pasos que ejemplifican cómo se llega al rìo; cómo las mujeres se despiden de los hombres que zarpan al rìo; el proceso de cómo pescan en las canoas, embarcaciones muy típicas; preparan los alimentos, y finalmente su retorno con las mujeres eufòricamente esperàndolos. 
+
+</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://e.rpp-noticias.io/large/2016/06/24/074307_177313.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Danza de la Pandilla</h3>
+                    <p>A la par de ambas, estàn otras danzas memorables, como la danza de La Pandilla, siendo està ejecutada en con movimientos de zigzag y ondulatorios; pasos que incluyen patadas, saltos, gritos y movimientos de cadera pìcaros, transmitiendo mucha energìa, picardía, sensualidad, alegrìa y espontaneidad. 
+
+
+Se ejecuta en varios momentos importantes en el pueblo, como un nacimiento nuevo, unión de familias, pubertad, enfermedades, hasta fallecimientos.
+
+</p>
+                </div>
+            </div>
+        </div>
+ <div class="section">
+        <h2>Además:</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/TQgxdHX35Y8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAeQbZdDRBQ7YN6CTAleBvg9HGbXg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Fiesta y Ritual Masato</h3>
+                    <p>La fiesta y ritual del Masato representa el proceso de elaboración del masato, donde la yuca era la protagonista. Esta era una bebida ceremonial y muy representativa de la selva para ritos, ademàs, se sabe que su ingesta sacìa y es muy energètica, proporcionando la energìa suficiente para las arduas labores que se realizaban y realizan en la selva, sobre todo las agrícolas, y precisamente esta danza se ejecutaba después de ingerir el Masato. Esta danza lleva un significado religioso también, puesto que se empleaba como conexión o lazo en cultos, dadas sus cualidades ya mencionadas.
+.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_1FtFZ3yZvh6EQTBtjmEyP_8LpWZTfPERgpUmYm1RUmWniooz7W0dt1CEFiBDON_Cb4L_bwuHXwxHAesgE9BRaZuoHmq73qEpr9sQsuQ94xxTnzLFu8BCkb6PywElHc2u-3T0fhFW5TYe/s1280/Carnaval+De+Lamas.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Carnaval de Lamas</h3>
+                    <p>Y por último, el muy conocido Carnaval de Lamas ejecutado en Moyobamba, capital de San Martín, este teniendo como fin crear un espacio de convivencia en el contexto mìstico lleno de la vivacidad de los colores que se tienen, para que las personas interactúen ahí. Se busca reflejar desde las vestimentas la representación a los chivos, animales que desde tiempos antiguos se solía pastorear por todas las zonas, además que esta danza posee mucha fuerza debido a su longevidad, teniendo registro de su presencia desde la fundación española en el Perú. 
+ </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://unsm.edu.pe/wp-content/uploads/2022/11/FOTO-4-DANZA-02-11-2022.jpg" alt="Imagen de Tarjeta">
+                <div class="card-content">
+                    <h3>Reflexion</h3>
+                    <p>En la regiòn de San Martìn se ejecutan diversas danzas, la mayoría con un significado trascendental y fines diferentes, aunque una gran parte se originan con propósitos míticos y/o carácter màgico. Las danzas en general buscan incitar a crear un espacio de convivencia por un fin mutuo que puede venir desde creencias antiquísimas, hasta meramente unión y hermandad, fortaleciendo el sentido de identidad y pertenencia en las sociedades.
+
+</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Destino San Martín: Donde la selva y cultura se encuentran.com - Trabajo de investigación desarrollado por estudiantes del 9no grado de secundaria, Lima, Perú</p>
+    </footer>
+      
+</body>
+</html>
